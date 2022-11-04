@@ -1,0 +1,528 @@
+<!DOCTYPE html>  <!-- Defines that this document is an html document -->
+<html lang="en"> <!-- is the root element of an html page-->
+
+<head>  <!-- Contains meta information about the html page-->
+    
+    <!-- 12 section - CSS Styles-->
+    <style>
+        body {background-color: rgba(239, 245, 246, 0.764);}
+        h3   {color: rgb(51, 255, 0);}
+        p    {color: rgb(14, 188, 200);}
+
+    /*  Setting a border in all paragraphs*/
+        p {border: 2px solid rgb(255, 12, 41);}
+
+    /* Setting a padding ( space) between the text and the border */
+        p{ padding: 5px;}
+
+        .city {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 252, 252);
+        border: 2px solid rgb(0, 255, 34);
+        margin: 20px;
+        padding: 10px;
+
+
+      }
+
+      .center {
+    text-align: center;}
+
+    #myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;}
+
+
+        </style>
+
+    <!-- Using a External sheet with styles config-->
+    <link rel="Stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Responsive config-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <title>Document</title> <!-- specifies a title for the html page-->
+    <link rel="ICONO" type="image/x-icon" href="CAR.ico">
+
+
+
+</head>
+
+<body>
+    <!-- 
+        defines the documents buddy
+        is a container for all the visible contents ( headings, paragraphs , images , hyperlinks , etc)
+    -->
+
+    <a href="#C4">Jump to Bookmarks</a>
+    <h1 style="background-color:rgb(21, 132, 243);"> 1. HEADING LEVELS</h1>
+    <h1> Header level 1</h1>
+    <h2> Header Level 2</h2>
+    <h3> Header Level 3</h3>
+
+    <p> Parrafo en html</p>
+
+    <h3 style="background-color:rgb(21, 132, 243);"> 2. HTML LINKS</h3>
+    <a href="https://depor.pe">NOMBRE DEL LINK</a>
+    <!-- href: path of the page link -->
+
+    <h3 style="background-color:rgb(21, 132, 243);">3. HTML IMAGES</h3>
+    <img src="triceratops.jpg" alt="Es un triceratops" width="150" height="150">
+    <!-- src = path of the image -->
+    <!-- alt = image description -->
+    <!-- width and height : size atributes -->
+
+    
+    <h3 style="background-color:rgb(21, 132, 243);">4. HTML Paragraphs</h3>
+    
+    <p> This is a paragraph. </p>
+    <p> This is another paragraph</p>
+
+    <!-- you cannont be sure how HTML will be displayed -->
+    <!-- you cannont change the display by adding extra spaes or extra lines in your code-->
+    <!-- The browser will atomatically remove any extra spaces and lines when the page is displayed-->
+
+    <p> 
+        este
+        Parrafo
+        contiene 
+        muchas 
+        lineas de 
+        codigo
+        pero el navegador lo ignora
+    </p>
+
+    <p> este   parrafo          contiene muchos espacios          en el codigo
+        pero el navegador                tambien lo ignora
+    </p>
+
+    <h3 style="background-color:rgb(21, 132, 243);"> 5. Separate content , command hr </h3>
+
+    <h4>Contenido 1</h4>
+    <hr> <!-- creates a divisory line-->
+    <h4>Contenido 2</h4>
+    <hr>
+    <h4>Contenido 3</h4>
+
+    <h3 style="background-color:rgb(21, 132, 243);">6. HTML Line Breaks</h3>
+    <!-- if you want a line break ( new line) without starting a new paragraph-->
+    <p> Testing line break <br> let's see</p>
+
+    <h3 style="background-color:rgb(21, 132, 243);"> 7. HTML preformatted text</h3>
+    <!-- <pre> defines a preformatted text ( it preserves spaces and line breaks) -->
+
+    <pre>
+            dsalksa kldsakkd
+            saklk dskalkdsa
+            sdadas            adssssssss
+        </pre>
+
+    <H3 style="background-color:rgb(21, 132, 243);"> 8. HTML styles</H3>
+
+    <!--Setting the style of an html element can be done with the 'Style attribute' -->
+
+    <h4 style="background-color:powderblue;">This is a heading</h4>
+    <p style="background-color:tomato;">This is a paragraph.</p>
+
+    <h4 style="color:blue;">This is a heading</h4>
+<p style="color:red;">This is a paragraph.</p>
+
+<h4 style="font-family:verdana;">This is a heading</h4>
+<p style="font-family:courier;">This is a paragraph.</p>
+
+<h4 style="font-size:200%;">This is a heading</h4>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+<h4 style="text-align:center;">Centered Heading</h4>
+<p style="text-align:center;">Centered paragraph.</p>
+
+
+<H3 style="background-color:rgb(21, 132, 243);"> 9. HTML Text formatting</H3>
+
+<b> thid text is a bold</b>
+<br>
+<strong>Important text</strong>
+<br>
+<i>Italic text</i>
+<br>
+<em>Marked text</em>
+<br>
+<small>small text</small>
+<br>
+<del>deleted text</del>
+<br>
+<ins>inserted text</ins>
+<br>    
+<sub>subscript text</sub>
+<br>
+<sup>Supercript text</sup>
+
+<H3 style="background-color:rgb(21, 132, 243);"> 10. Quotations and Citation Elements</H3>
+
+<!-- blockquote defines a section that is quoted from another source -->
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and
+close to 5 million globally.
+</blockquote>
+
+<!-- <q> for short quotations -->
+    <!-- tag defines a short quotation-->
+    <hr>
+    <p>Short quotation</p>
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+<!-- <abbr> for abrevviations -->
+    <hr>
+    <p>Abrevviations</p>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<!-- address for contact information  -->
+<hr>
+<p>Adress</p>
+<address>
+    Writthen by Andre Villegas <br>
+    Visit us at: <br>
+    triceratops.com <br>
+    Las Leyendas 88 , D903
+    Lima - San Miguel
+</address>
+
+<!-- cite for Work Title ( books , poem , articles , etc)-->
+<hr>
+<p>Cites</p>
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893</p>
+<hr>
+
+<H3 style="background-color:rgb(21, 132, 243);"> 11. Colors</H3>
+
+
+<p> Background colors</p>
+
+<h4 style="background-color:rgb(214, 134, 30);">Hello World</h4>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+
+<hr>
+<p>Text Color</p>
+<h4 style="color:Tomato;">Titulo con color</h4>
+<p style="color:DodgerBlue;">parrafo con color</p>
+<p style="color:MediumSeaGreen;">otro parrafo</p>
+
+<hr>
+<p>Border Color</p>
+<h4 style="border:2px solid Tomato;">Hello World</h14>
+<p style="border:2px solid DodgerBlue;">Hello World</p>
+<h4 style="border:2px solid rgb(27, 232, 8);">Hello World</h14>
+<p style="border:2px solid Violet;">Hello World</p>
+
+<hr>
+
+<H3 style="background-color:rgb(21, 132, 243);"> 12. HTML Styles - CSS</H3>
+
+<!--
+    CSS stands for Cascading Style Sheets
+    CSS saves a lot of work. it can control the layour of multiple web pages all at once
+-->
+
+<!-- Using CSS
+    Inline - by using style attribute inside HTML elements
+    Internal - by using a <style> element in the <head> section
+    External - by using <link> element to link to an exnernal CSS file
+-->
+
+<h4> Inline CSS</h4>
+<p>Used to apply a unique style to a single html element</p>
+
+<h5 style="color:blue;">A Blue Heading</h5>
+
+<p style="color:red;">A red paragraph.</p>
+
+<hr>
+<h4>Internal CSS</h4>
+<p>used to define style for a single HTML page</p>
+<p>An internal CSS is defined in the head section of an HTML page, within a style element</p>
+<p>check head code of this site</p>
+
+<hr>
+<h4>External CSS</h4>
+<p>An external Style sheet is used to define the style for many HTML pages.</p>
+<p>To use an external sheet, add a link to it in the head section of your HTML code.</p>
+<p>Check head code of this site</p>
+
+<hr>
+
+<!--CSS Color , Font and Sizes -->
+<!-- check header -->
+
+<!-- CSS border -->
+<!-- check header-->
+
+<!-- CSS padding-->
+<!-- check header-->
+
+<!-- CSS Margin-->
+<!-- defines a margin (space) outside the border-->
+<h4>CSS margin</h4>
+
+<p style="margin:50px;">mas alla</p>
+<p style="margin:100px;">mas lejos</p>
+<p style="margin:20px;">mas cerca</p>
+<hr>
+
+<H3 style="background-color:rgb(21, 132, 243);"> 12. LINKS</H3>
+
+<h4> text links</h4>
+<a href="triceratops.jpg">DINOSAURIO</a>
+
+<hr>
+
+<h4> Image links</h4>
+
+<a href="lux2.jpg"> <img src="lux1.jpg" alt="Button"></a>
+
+
+<hr>
+
+<h4> The target attribute</h4>
+<p> By default the linked page will be displayed in the current browser window</p>
+<p> To change this, you must specify another target for the link</p>
+<p> The 'target' attribute specifies where to open the linked document</p>
+
+<a href="lux2.jpg" target="_self">Abrira la imagen aqui</a>
+<br>
+<a href="lux2.jpg" target="_blank">Abrira la imagen en una nueva pestagna</a>
+
+<hr>
+<h4> Link to an email address</h4>
+<p> to create a link that opens in the user's email program ( to let them send a new email)
+    ,use 'mailto:' inside the href attribute:
+</p>
+<br>
+<a href="mailto:nestor.villegasp@gmail.com">Enviar mensaje a Nestor</a>
+
+<hr>
+
+<H3 style="background-color:rgb(21, 132, 243);"> 13. Favicons</H3>
+
+
+<!-- check header Favicon section-->
+<!-- not working check later-->
+
+
+<hr>
+
+<H3 style="background-color:rgb(21, 132, 243);"> 14. Tables</H3>
+
+<table>
+    <tr>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Color</th>
+    </tr>
+    <tr>
+      <td>BMW</td>
+      <td>z4</td>
+      <td>negro</td>
+    </tr>
+    <tr>
+      <td>Honda</td>
+      <td>civic</td>
+      <td>azul</td>
+    </tr>
+  </table>
+
+ <!-- tables can be styled with CSS-->
+ <!-- tr : table rows-->
+ <!-- td : table cells-->
+ <!-- th : table headers-->
+
+ <hr>
+
+ <H3 style="background-color:rgb(21, 132, 243);"> 15. List</H3>
+
+ <h4>Unordered HTML list</h4>
+ <!-- An unordered list starts with he <ul> tag-->
+    <!-- each list item starts with the <li> tag-->
+
+        <ul>
+            <li>Honda</li>
+            <li>Audi</li>
+            <li>Toyota</li>
+          </ul>
+
+<hr>
+
+<h4> Ordered List</h4>
+<!-- An ordered list starts with the <ol> tag-->
+<!-- The list items will be marked with numbers by default-->
+
+<ol>
+    <li>Alianza</li>
+    <li>Cristal</li>
+    <li>Melgar</li>
+  </ol>
+
+  <hr>
+<h4> Description List</h4>
+<!-- A description list is a list of terms, with a description of each term-->
+
+<dl>
+    <dt>Kamlu</dt>
+    <dd>- Gato Feo</dd>
+    <dt>Micho</dt>
+    <dd>- Gato gordo</dd>
+  </dl>
+<hr>
+
+<H3 style="background-color:rgb(21, 132, 243);"> 16. HTML BLOCKs and InLine Elements</H3>
+
+<!-- Every HTML element has a default display value , depending on what type of element it is.-->
+<!-- There are two display values: block and inline.-->
+
+<h4>16.1 Block Level elements</h4>
+
+<p> A block level elements always starts on a new line.</p>
+<p> The browser automatically add some space(a margin) before and after the element</p>
+<p> A block-level element always takes up he full width available</p>
+<p> two commonly used block elements are: p and div</p>
+
+<p> the p tag is a block-level element </p>
+<div> the div tag is a block-level element</div>
+
+<hr>
+
+<h4>16.2 Inline Elements</h4>
+
+<div>An inline element does not start on a new line.</div>
+<div>An inline element only takes up as much width as necessary</div>
+<div>Lets test the span element</div>
+
+<span style="border:2px solid black">This is a Span element</span>
+
+<!-- Here are some inline elements in html-->
+<!-- <a> <cite> <img> <span> etc-->
+
+<hr>
+
+<h4>16.3 The div element</h4>
+
+<div>The div element is often used as a container for other HTML elements</div>
+<div>The div element has no required attributes but Style , class and id are common</div>
+<div>When used together with CSS, the div element can be used to Style blocks of content.</div>
+
+<div style="background-color:rgb(0, 0, 0);color:white;padding:10px;">
+    <h2>Lima</h2>
+    <p>Lima is the capital of Peru.</p>
+  </div>
+
+
+<hr>
+<h4>16.4 The span element</h4>
+<div> The span element is an inline container used to mark up a part of a text or document.</div>
+<div> When used together with the CSS, the span element can be used to style parts of the text</div>
+
+<p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes 
+and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+
+
+<H3 style="background-color:rgb(21, 132, 243);"> 17. HTML Class Attribute</H3>
+
+<div> The HTML class attribute is used to specify a class for an html elements.</div>
+<div> Multiple HTML elements can share the same class</div>
+
+<!-- the class name is ofter used to point to a class name in a style sheet.-->
+<!-- it can also be used by a javaScript to access and manipulate elements with the specific class name-->
+
+<!-- In the following example we have three div elements with a class 'city'-->
+<!-- All those 3 div elements will be styled equally according to the .city style definition in head section-->
+
+<div class="city">
+    <h2>London</h2>
+    <p>London is the capital of England.</p>
+  </div>
+  
+  <div class="city">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+  </div>
+  
+  <div class="city">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <!-- HTML elements can belong to more than one class-->
+  <!-- Lets create .city and .center class in headers and set some configs-->
+
+  <hr>
+
+  <h2 class="city center">London</h2>
+<h2 class="city">Paris</h2>
+<h2 class="city">Tokyo</h2>
+
+
+<hr>
+
+<H3 style="background-color:rgb(21, 132, 243);"> 18. HTML ID attribute</H3>
+
+<!-- The id attribute specifies a unique ide for an HTML element-->
+<!--  the value of the id attribute must be unique within the HTML document-->
+<!-- The syxtax for id is> write a hash #, followed by an id name.-->
+<!-- hen define the CSS properties within curly braces {}-->
+
+<h1 id="myHeader">My Header</h1>
+
+<!-- Difference Between Class and ID-->
+<!-- A class name can be used by multiple HTML elements
+    while an id name must only be used by one HTML element within the page -->
+
+<hr>
+<h4>Bookmarks with ID and Links</h4>
+<!-- HTML bookmarks are used to allow readers to jump to specific parts of a webpage.
+    Bookmarks can be useful if your page is very long.
+    To use a bookmark, yo must first create it, and then add a link to it.
+    When the link is clicked, the page will scroll to the location with the bookmark-->
+  
+<!-- Example-->
+
+<h5 id="C4">Bookmark Test</h2>
+<p> El link al bookmark esta al inicio de la pagina</p>
+
+
+<H3 style="background-color:rgb(21, 132, 243);"> 19. Responsive web design</H3>
+
+<div>Responsive web design is about creating web pages that look good on all devices</div>
+<div>A responsive web design will automatically adjust for different screen sizes and viewports</div>
+
+<!-- check responsive config in HEAD code-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</body>
+</html>
+
